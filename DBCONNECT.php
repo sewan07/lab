@@ -1,24 +1,25 @@
 
-
 <?php
-// connect to csdm- webdev server and sel ect database
-$db = new mysqli(
-"us-cdbr-azure-southcentral-f.cloudapp.net",
-"b762b602ac9c7b",
-"360b7be5",
-"cm3028rgu"
+// 1. Create a database connection
+$dbhost = "us-cdbr-azure-southcentral-f.cloudapp.net";
+$dbuser = "b762b602ac9c7b";
+$dbpass = "360b7be5";
+$dbname = "cm3028rgu";
+$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+// Test if connection succeeded
+if(mysqli_connect_errno()) {
+die("Database connection failed: " .
+mysqli_connect_error() .
+" (" . mysqli_connect_errno() . ")"
 );
-// test if connection was established, and print any errors
-if($db->connect_errno){
-die('Connectfailed['.$db->connect_error.']');
 }
 ?>
-
 <?php
-
-// create a SQL query as a string
-$sql_query = "SELECT * FROM superheros WHERE superpower LIKE '%l aser%' ";
-// execute the SQL query
-$result = $db->query($sql_query);
-
+$sql = "SELECT * from marvel movies";
+?>
+<?php
+$result = mysqli_query($db,$sql);
+?>
+<?php
+$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 ?>

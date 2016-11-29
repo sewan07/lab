@@ -14,3 +14,21 @@ if(mysqli_connect_errno()) {
     );
 }
 ?>
+<?php
+$sql_query = "SELECT * FROM superheroes WHERE superpower LIKE '% aser %'";
+$result = $db->query($sql_query);
+?>
+
+<?php
+while($row = $result->fetch_array()){
+// process the $row
+}
+?>
+<?php
+echo "<p> ’ ’ . $row ['superheroName'].‘ ‘</p>";
+?>
+
+<?php
+$result->close();
+?>
+

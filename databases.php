@@ -28,7 +28,7 @@ if (!$result){
 <!DOCTYPE html>
 <html>
 <head>
-    <title> portlethens </title>
+    <title> portlethen </title>
 </head>
 <body>
 

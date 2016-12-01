@@ -40,6 +40,11 @@ while($row = mysqli_fetch_row($result)) {
 }
 ?>
 
+<?php
+//release returned data
+mysqli_free_result($result);
+?>
+
 </body>
 </html>
 

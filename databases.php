@@ -16,7 +16,7 @@ if(mysqli_connect_errno()) {
 ?>
 
 <?php
-$query = "SELECT * FROM superheros WHERE superpower LIKE '%l aser%' ";
+$query = "SElECT * FROM marvelmovies";
 $result = mysqli_query($connection, $query);
 //Test if there was a query error
 if (!$result){

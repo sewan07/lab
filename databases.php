@@ -18,6 +18,7 @@ if(mysqli_connect_errno()) {
 <?php
 $query = "SElECT * FROM marvelmovies";
 $result = mysqli_query($connection, $query);
+//Test if there was a query error
 if (!$result){
     die("Database query failed.");
 }
@@ -30,6 +31,14 @@ if (!$result){
     <title> portlethen </title>
 </head>
 <body>
+
+<?php
+// Use returnes data if any
+while($row = mysqli_fetch_row($result)) {
+    var_dump($row);
+    echo "<hr />";
+}
+?>
 
 </body>
 </html>

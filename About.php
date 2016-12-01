@@ -4,8 +4,9 @@
     <title> portlethen </title>
 </head>
 <body>
-<p>
-    <a href="index.php">home</a>
-</p>
+
+<?php $link_name = "About Page"; ?>
+<a href="About.php"> <?php echo $link_name; ?></a>
+
 </body>
 </html>

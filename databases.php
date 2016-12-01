@@ -16,7 +16,7 @@ if(mysqli_connect_errno()) {
 ?>
 
 <?php
-$query = "SEECT * FROM marvelmovies";
+$query = "SElECT * FROM marvelmovies";
 $result = mysqli_query($connection, $query);
 if (!$result){
     die("Database query failed.");

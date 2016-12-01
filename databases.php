@@ -17,6 +17,10 @@ if(mysqli_connect_errno()) {
 
 <?php
 $query = "SELECT * FROM marvelmovies";
+$result = mysqli_query($connection, $query);
+if (!$result){
+    die("Database query failed.");
+}
 
 ?>
 

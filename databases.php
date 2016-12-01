@@ -16,9 +16,7 @@ if(mysqli_connect_errno()) {
 ?>
 
 <?php
-$query = "SElECT *";
-$query .= "FROM subjects";
-
+$query = "SElECT * FROM marvelmovies";
 $result = mysqli_query($connection, $query);
 //Test if there was a query error
 if (!$result){

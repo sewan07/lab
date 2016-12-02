@@ -36,10 +36,10 @@ if (!$result){
 <ul>
 <?php
 // Use returnes data if any
-while($row = mysqli_fetch_assoc($result)) {
+while($subject = mysqli_fetch_assoc($result)) {
 
     ?>
-    <li> <?php echo $row["menu_name"]; ?></li>
+    <li> <?php echo $subject["menu_name"]; ?></li>
     <?php
 }
 ?>

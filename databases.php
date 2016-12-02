@@ -16,7 +16,10 @@ if(mysqli_connect_errno()) {
 ?>
 
 <?php
-$query = "SElECT * FROM subjects";
+$query = "SElECT * ";
+$query .= "FROM subjects ";
+$query .= "WHERE visibile = 1 ";
+$query .= "ORDER BY position ASC";
 $result = mysqli_query($connection, $query);
 //Test if there was a query error
 if (!$result){
@@ -34,8 +37,12 @@ if (!$result){
 
 <?php
 // Use returnes data if any
-while($row = mysqli_fetch_row($result)) {
-    var_dump($row);
+while($row = mysqli_fetch_assoc($result)) {
+    echo $row["id"] . "<br />";
+    echo $row["menu_name"] . "<br />";
+    echo $row["position"] . "<br />";
+    echo $row["visible"] . "<br />";
+
     echo "<hr />";
 }
 ?>

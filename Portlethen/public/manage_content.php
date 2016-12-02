@@ -18,7 +18,7 @@
             while($subject = mysqli_fetch_assoc($subject_set)) {
                 ?>
                 <li>
-                    <a href="manage_content.php?subject=<?php echo urlencode( $subject["id"]); ?> "><?php echo $subject["menu_name"]; ?></a>
+                    <?php echo $subject["menu_name"]; ?>
                     <?php
                     $query  = "SELECT * ";
                     $query .= "FROM pages ";
@@ -32,8 +32,7 @@
                         <?php
                         while($page = mysqli_fetch_assoc($page_set)) {
                             ?>
-                            <li>
-                                <a href="manage_content.php?page=<?php echo urlencode( $page["id"]); ?>"><?php echo $page["menu_name"]; ?></li></a>
+                            <li><?php echo $page["menu_name"]; ?></li>
                             <?php
                         }
                         ?>
@@ -53,5 +52,3 @@
 </div>
 
 <?php include("../includes/layouts/footer.php"); ?>
-
-

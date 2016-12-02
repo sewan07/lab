@@ -38,6 +38,7 @@
                     while($page = mysqli_fetch_assoc($page_set)) {
 
                     ?>
+                </ul>
                     <li>
                         <?php echo $page["menu_name"]; ?> </li>
                         <?php

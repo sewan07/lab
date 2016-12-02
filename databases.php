@@ -33,16 +33,17 @@ if (!$result){
 </head>
 <body>
 
+<ul>
 <?php
 // Use returnes data if any
 while($row = mysqli_fetch_assoc($result)) {
-    echo $row["id"] . "<br />";
-    echo $row["menu_name"] . "<br />";
-    echo $row["position"] . "<br />";
-    echo $row["visible"] . "<br />";
-    echo "<hr />";
+
+    ?>
+    <li> <?php echo $row["menu_name"]; ?></li>
+    <?php
 }
 ?>
+</ul>
 
 <?php
 //release returned data

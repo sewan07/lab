@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="header">
-    <h1>Site Administrator</h1>
+    <h1>Portlethen</h1>
 </div>
 <div id="main">
     <div id="navigation">

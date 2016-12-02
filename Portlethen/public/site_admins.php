@@ -1,3 +1,4 @@
+<?php require_once("../includes/function.php"); ?>
 <?php include("../includes/layouts/header.php"); ?>
 
 <div id="main">

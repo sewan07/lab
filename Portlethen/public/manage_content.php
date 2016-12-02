@@ -51,7 +51,4 @@ mysqli_free_result($result);
 
 <?php include("../includes/layouts/footer.php"); ?>
 
-<?php
-// Close database connection
-mysqli_close($connection);
-?>
+

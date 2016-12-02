@@ -16,7 +16,7 @@ if(mysqli_connect_errno()) {
 ?>
 
 <?php
-$query = "SElECT * ";
+$query = "SELECT* ";
 $query .= "FROM subjects ";
 $query .= "WHERE visibile = 1 ";
 $query .= "ORDER BY position ASC";

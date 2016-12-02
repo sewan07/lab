@@ -42,7 +42,6 @@ while($row = mysqli_fetch_assoc($result)) {
     echo $row["menu_name"] . "<br />";
     echo $row["position"] . "<br />";
     echo $row["visible"] . "<br />";
-
     echo "<hr />";
 }
 ?>

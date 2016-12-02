@@ -1,7 +1,14 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: sewan
- * Date: 02/12/2016
- * Time: 11:47
- */
+<?php include("../includes/layouts/header.php");
+?>
+<div id="main">
+    <div id="navigation">
+        &nbsp;
+    </div>
+    <div id="page">
+        <h2>Manage Content</h2>
+
+    </div>
+</div>
+
+<?php include("../includes/layouts/footer.php");
+?>

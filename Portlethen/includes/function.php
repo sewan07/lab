@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sewan
- * Date: 02/12/2016
- * Time: 12:11
- */
+function confirm_query($result_set){
+    if (!result_set) {
+        die("Database query failed.");
+    }
+}
+?>

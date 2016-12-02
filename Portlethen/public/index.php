@@ -5,7 +5,7 @@
 </head>
 <body>
 <p>
-    <a href="About.php">Second Page</a>
+    <a href="../About.php">Second Page</a>
 </p>
 </body>
 </html>

@@ -3,7 +3,7 @@
 
 <html lang="en">
 <head>
-    <title>site_admins</title>
+    <title> Portlethen </title>
     <link href="stylesheets/public.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 <body>
